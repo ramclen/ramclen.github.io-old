@@ -1,0 +1,93 @@
+.content-about {
+  @media screen and (min-width: 1675px){
+    margin-top: 50px;
+  }
+}
+
+
+.text-bubble-centered {
+  text-align: center;
+  vertical-align: middle;
+  color:white;
+  margin-top:37% ;
+  font-weight: bold;
+}
+
+.circle{
+  border-radius: 50%;
+  float:left;
+}
+
+.nopadding{
+  padding: 0px;
+}
+
+.avatar-about{
+  @extend .circle;
+  height: 280px;
+
+  @media screen and (max-width: 1670px){
+    margin-top: 16%;
+    margin-right: 10%;
+  }
+
+}
+
+.bubble{
+  @extend .circle;
+  width: 150px;
+  height: 150px;
+  margin: 18px;
+  transition: .3s all ease-in-out;
+
+
+  a{
+    margin-top: 42%;
+  }
+}
+
+.bubble-skill {
+  @extend .bubble;
+  background-color: #db3e24;
+
+  &:hover{
+    background-color: #9c3a22;
+  }
+}
+
+.bubble-knowledge {
+  @extend .bubble;
+  background-color: #03c239;
+
+  &:hover{
+    background-color: #038730;
+  }
+}
+
+.bubble-resume{
+  @extend .bubble;
+  background-color: #0077aa;
+
+  &:hover{
+    background-color: #005077;
+  }
+}
+
+.bubble-content{
+  @media screen and (max-width: 1670px){
+    display: table-caption;
+    margin-left: 10%;
+  }
+  @media screen and (max-width: 1066px){
+    display: none;
+  }
+
+  @media screen and (min-width: 1675px){
+    margin-top: 43px;
+  }
+}
+
+
+.resume{
+  margin-top: 90px;
+}

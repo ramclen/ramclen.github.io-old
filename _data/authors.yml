@@ -1,0 +1,12 @@
+someone:
+  id: someone
+  name: Cristopher López
+  avatar: /cristopher-image.jpg
+  bio: Soy un apasionado del desarrollo de software, proactivo y tenaz.
+   Adoro trabajar en equipo y hacer que todos los miembros se sientan a gusto.
+   Mis ambiciones hasta el momento han sido crear un flujo de conocimiento y emprendimiento
+   en la isla de Gran Canaria
+  twitter: "https://twitter.com/Ramclen"
+  facebook: "https://www.facebook.com/ramclen.guerrasegura"
+  youtube: "https://www.youtube.com/channel/UCMJ1KlVThPfap2d81yKwBzw"
+  email: cristopher.correo@gmail.com
