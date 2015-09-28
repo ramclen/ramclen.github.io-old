@@ -1,12 +1,12 @@
 ---
-author: someone
+author: cristopher
 layout: post_full
 type: gallery
 featimg: /galleries/gallery-standard-post/2.jpg
 title: Gallery Alternative
 gallery-id: gallery
 tags: [gallery, image]
-category: [image]
+category: [imagen]
 ---
 An alternative to the simple gallery would be this version, which displays the post ins a lightbox.
 The setup basically is the same, the include makes all the difference.

@@ -1,5 +1,5 @@
 ---
-author: someone
+author: cristopher
 layout: post_full
 type: youtube
 yt-video-id: hPX9h5OrlhU
