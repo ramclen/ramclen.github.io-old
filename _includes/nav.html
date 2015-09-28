@@ -4,15 +4,15 @@
             <a class="toggle_link noline"><i class="fa fa-close fa-lg"></i></a>
             <ul>
                 <li>
-                    <a href="{{ site.baseurl | replace: '//', '/' }}/">Home</a>
+                    <a href="{{ site.baseurl | replace: '//', '/' }}/">Inicio</a>
                 </li>
                 <li>
-                    <a href="{{ site.baseurl | replace: '//', '/' }}/about">About</a>
+                    <a href="{{ site.baseurl | replace: '//', '/' }}/about">Acerca de</a>
                 </li>
                 <li>
-                    <a href="{{ site.baseurl | replace: '//', '/' }}/archive">Archive</a>
+                    <a href="{{ site.baseurl | replace: '//', '/' }}/archive">Archivos</a>
                 </li>
-                <li class="parent"><a href="#">Categories</a>
+                <li class="parent"><a href="#">Categorias</a>
                     <ul>
                             {% assign category_list = site.categories %}
                             {% if category_list.first[0] == null %}
