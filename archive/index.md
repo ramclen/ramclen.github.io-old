@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Archive
+title: Archivo
 ---
-## by Month
+## por Mes
 {% include monthly_archive.html %}
 
 <br/>
 
-## by Year
+## por Año
 {% include yearly_archive.html %}
