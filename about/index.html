@@ -1,0 +1,48 @@
+---
+layout: about
+description: the good site of life
+---
+
+{% assign cristopher = site.data.authors.someone %}
+
+
+<div class="content-about col-md-offset-3 col-xs-7 col-sm-7 col-md-7 col-lg-7" >
+    <img class="avatar-about" src="{{ site.media_folder | prepend: site.baseurl | replace: '//', '/'}}{{ cristopher.avatar }}" alt="{{ cristopher.id }} avatar">
+    <div class="bubble-content">
+        <div class="bubble-resume">
+            <a href="#about-me"><p class="text-bubble-centered">QUIEN SOY</p></a>
+        </div>
+    
+        <div class="bubble-knowledge">
+            <a href="#knowledge"><p class="text-bubble-centered">CONOCIMIENTOS</p></a>
+        </div>
+    
+        <div class="bubble-skill">
+            <a href="#skills"><p class="text-bubble-centered">HABILIDADES</p></a>
+        </div>
+    </div>
+</div>
+
+<section id="about-me">
+    <div class="authorbox resume">
+        <h1>¿Quien Soy?</h1>
+        <br/>
+        <p class="bio">{{ cristopher.bio }}</p>
+    </div>
+</section>
+
+<section id="knowledge">
+    <div class="authorbox">
+        <h1>Conocimientos</h1>
+        <br/>
+        <p class="bio">{{ cristopher.bio }}</p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="authorbox">
+        <h1>Habilidades</h1>
+        <br/>
+        <p class="bio">{{ cristopher.bio }}</p>
+    </div>
+</section>
