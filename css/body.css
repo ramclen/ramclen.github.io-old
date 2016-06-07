@@ -1,0 +1,48 @@
+.body {
+  position: relative;
+  top: 150px;
+  z-index: 100;
+}
+
+.company-photo {
+  width: 55px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.card-text_right_company {
+  margin-left: 40px;
+}
+
+.card-text_left_company {
+  margin-right: 40px;
+}
+
+.personal-photo {
+  height: 200px;
+  width: 200px;
+  -moz-filter:brightness(1.3);
+  -webkit-filter:brightness(1.3);
+  -o-filter:brightness(1.3);
+  -ms-filter:brightness(1.3);
+  filter:brightness(1.3);
+}
+
+@media(max-width: 960px) {
+  .personal-photo{
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media(max-width: 389px) {
+  .personal-photo{
+    height: 100px;
+    width: 100px;
+  }
+}
+
+
+md-card{
+  margin-top: 10px !important;
+}

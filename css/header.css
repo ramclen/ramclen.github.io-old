@@ -1,0 +1,43 @@
+.header {
+  background: #3F51B5;
+  height: 220px;
+  position: absolute;
+  width: 100vw;
+}
+
+
+@media(min-width: 960px){
+  .social {
+    margin: 20px 10px 10px;
+    text-align: right;
+  }
+
+  .social i{
+    margin-right: 11px;
+  }
+
+
+}
+
+.social {
+  margin: 3px 10px 10px;
+  color: white;
+  font-size: 26px;
+}
+
+.social a{
+  color: white;
+  text-decoration: none;
+}
+
+
+@media(max-width: 960px) {
+  .header-content{
+    padding-top: 25px !important;
+    padding-left: 3px;
+  }
+}
+
+.header-content {
+  padding-top: 50px;
+}
