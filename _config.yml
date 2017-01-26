@@ -118,3 +118,7 @@ prose:
           help: "Set post type to youtube in order for this to work. Do not set featured image, as the youtube video thumbnail will be used"
           type: "text"
 
+
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "page/:num"
