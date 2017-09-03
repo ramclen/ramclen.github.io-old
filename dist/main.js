@@ -111543,8 +111543,8 @@ var App = function (_React$Component) {
                         _react2.default.createElement(
                             'div',
                             null,
-                            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _UserInformationComponent2.default }),
-                            _react2.default.createElement(_reactRouterDom.Route, { path: '/Products', component: _ProductListContainer2.default })
+                            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/shopping-cart', component: _UserInformationComponent2.default }),
+                            _react2.default.createElement(_reactRouterDom.Route, { path: '/shopping-cart/Products', component: _ProductListContainer2.default })
                         )
                     )
                 )
@@ -112624,7 +112624,7 @@ var UserInformationComponent = function (_React$Component) {
             gSpreadSheets.init().then(function () {
                 return gSpreadSheets.signIn();
             }).then(function () {
-                _this2.props.history.push('/Products');
+                _this2.props.history.push('/shopping-cart/Products');
             });
         }
     }, {
