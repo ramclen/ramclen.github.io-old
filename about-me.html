@@ -1,333 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="css/body.css"/>
-    <link rel="stylesheet" type="text/css" href="css/header.css"/>
-    <meta charset="UTF-8">
-    <title>Cristopher Lopez</title>
-    <link rel="shortcut icon" href="/img/logo.png">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Angular Material style sheet -->
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+<head>
+  <link rel="stylesheet" type="text/css" href="css/body.css" />
+  <link rel="stylesheet" type="text/css" href="css/header.css" />
+  <meta charset="UTF-8">
+  <title>Cristopher Lopez</title>
+  <link rel="shortcut icon" href="/img/logo.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet"
+    href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
 </head>
+
 <body ng-app="BlankApp" ng-cloak>
 
-<div class="header" flex="100" layout="row" layout-align="center start">
+  <div class="header" flex="100" layout="row" layout-align="center start">
     <div class="header-content" flex="50" flex="50" flex-md="70" flex-sm="90" flex-xs="95">
-        <div layout-gt-xs="column"  layout-gt-sm="row" >
-            <div flex="100">
-                <h2 style="margin: 10px;color: white;">Cristopher Lopez</h2>
-                <h5 style="margin: 10px;color: white;">Software Engineer</h5>
-            </div>
-            <div class="social" flex="100">
-                <a href="https://dev.to/ramclen">
-                  <div>
-                    <svg class="dev-to-icon" xmlns="http://www.w3.org/2000/svg" version="1" width="20%" height="20%" viewBox="0 0 132.000000 65.000000" role="img" aria-labelledby="a89ls57s9yn7gxrfwgqreqxv4drfbz5y" class="logo"><title id="a89ls57s9yn7gxrfwgqreqxv4drfbz5y">App logo</title><path d="M0 33v32h11.3c12.5 0 17.7-1.6 21.5-6.5 3.8-4.8 4.4-9 4-28-.3-16.8-.5-18.2-2.7-21.8C30.3 2.5 26.1 1 12 1H0v32zm23.1-19.1c2.3 1.9 2.4 2.3 2.4 18.5 0 15.7-.1 16.7-2.2 18.8-1.7 1.6-3.5 2.2-7 2.2l-4.8.1-.3-20.8L11 12h4.9c3.3 0 5.6.6 7.2 1.9zM46.1 3.6c-2 2.6-2.1 3.9-2.1 29.6v26.9l2.5 2.4c2.3 2.4 2.9 2.5 16 2.5H76V54.1l-10.2-.3-10.3-.3v-15l6.3-.3 6.2-.3V27H55V12h21V1H62.1c-13.9 0-14 0-16 2.6zM87 15.2c2.1 7.9 5.5 20.8 7.6 28.8 3.2 12.3 4.3 15 7 17.7 1.9 2 4.2 3.3 5.7 3.3 3.1 0 7.1-3.1 8.5-6.7 1-2.6 15.2-55.6 15.2-56.8 0-.3-2.8-.5-6.2-.3l-6.3.3-5.6 21.5c-3.5 13.6-5.8 20.8-6.2 19.5C105.9 40 96 1.9 96 1.4c0-.2-2.9-.4-6.4-.4h-6.4L87 15.2z"></path></svg>
-                  </div>
-                </a>
-                <a href="https://es.linkedin.com/in/cristopherlopez"> <i class="zmdi zmdi-linkedin-box"></i> </a>
-                <a href="https://twitter.com/Ramclen"> <i class="zmdi zmdi-twitter-box"></i> </a>
-                <a href="https://github.com/ramclen"> <i class="zmdi zmdi-github-box"></i> </a>
-                <a href="mailto:cristopher.correo@gmail.com"> <i class="zmdi zmdi-email"></i> </a>
-            </div>
+      <div layout-gt-xs="column" layout-gt-sm="row">
+        <div flex="100">
+          <h2 style="margin: 10px;color: white;">Cristopher Lopez</h2>
+          <h5 style="margin: 10px;color: white;">Software Engineer</h5>
         </div>
+        <div class="social" flex="100">
+          <a href="https://dev.to/ramclen">
+            <div>
+              <svg class="dev-to-icon" xmlns="http://www.w3.org/2000/svg" version="1" width="20%" height="20%"
+                viewBox="0 0 132.000000 65.000000" role="img" aria-labelledby="a89ls57s9yn7gxrfwgqreqxv4drfbz5y"
+                class="logo">
+                <title id="a89ls57s9yn7gxrfwgqreqxv4drfbz5y">App logo</title>
+                <path
+                  d="M0 33v32h11.3c12.5 0 17.7-1.6 21.5-6.5 3.8-4.8 4.4-9 4-28-.3-16.8-.5-18.2-2.7-21.8C30.3 2.5 26.1 1 12 1H0v32zm23.1-19.1c2.3 1.9 2.4 2.3 2.4 18.5 0 15.7-.1 16.7-2.2 18.8-1.7 1.6-3.5 2.2-7 2.2l-4.8.1-.3-20.8L11 12h4.9c3.3 0 5.6.6 7.2 1.9zM46.1 3.6c-2 2.6-2.1 3.9-2.1 29.6v26.9l2.5 2.4c2.3 2.4 2.9 2.5 16 2.5H76V54.1l-10.2-.3-10.3-.3v-15l6.3-.3 6.2-.3V27H55V12h21V1H62.1c-13.9 0-14 0-16 2.6zM87 15.2c2.1 7.9 5.5 20.8 7.6 28.8 3.2 12.3 4.3 15 7 17.7 1.9 2 4.2 3.3 5.7 3.3 3.1 0 7.1-3.1 8.5-6.7 1-2.6 15.2-55.6 15.2-56.8 0-.3-2.8-.5-6.2-.3l-6.3.3-5.6 21.5c-3.5 13.6-5.8 20.8-6.2 19.5C105.9 40 96 1.9 96 1.4c0-.2-2.9-.4-6.4-.4h-6.4L87 15.2z">
+                </path>
+              </svg>
+            </div>
+          </a>
+          <a href="https://es.linkedin.com/in/cristopherlopez"> <i class="zmdi zmdi-linkedin-box"></i> </a>
+          <a href="https://twitter.com/Ramclen"> <i class="zmdi zmdi-twitter-box"></i> </a>
+          <a href="https://github.com/ramclen"> <i class="zmdi zmdi-github-box"></i> </a>
+          <a href="mailto:cristopher.correo@gmail.com"> <i class="zmdi zmdi-email"></i> </a>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
-<div class="body" layout="row" layout-align="center start">
+  <div class="body" layout="row" layout-align="center start">
 
-        <div layout="column" flex="50" flex-md="70" flex-sm="90" flex-xs="95" layout-align="center start">
-            <md-card flex="100">
-                <md-card-title>
-                    <md-card-title-text>
-                        <span class="md-headline">Little About Me</span>
-                        <span class="md-subhead">Abstract</span>
-                        <div hide-xs style="margin-right: 50px">
+    <div layout="column" flex="50" flex-md="70" flex-sm="90" flex-xs="95" layout-align="center start">
+      <md-card flex="100">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Little About Me</span>
+            <span class="md-subhead">Abstract</span>
+            <div hide-xs style="margin-right: 50px">
 
-                            <p>I am a Software Engineer with a passion for Web Technologies, focused on Javascript. I am an ambitious problem solver and always learning to obtain the necessary skills to become the best software engineer possible.</p>
-                        </div>
-                    </md-card-title-text>
-                    <md-card-title-media>
-                        <div class="card-media personal-photo">
-                            <img src="img/cristopher-image.jpg" style="border-radius: 5%;     filter: brightness(50%); ">
-                        </div>
-                    </md-card-title-media>
-
-                </md-card-title>
-
-                <div hide-gt-xs style="margin-right: 15px; margin-left: 15px">
-
-                    <p>I am a Software Engineer with a passion for Web Technologies, focused on Javascript. I am an ambitious problem solver and always learning to obtain the necessary skills to become the best software engineer possible.</p>
-                </div>
-
-                <md-card-actions layout="row" layout-align="end center">
-                    <br>
-                    <br>
-                </md-card-actions>
-            </md-card>
-
-
-
-            <md-card flex="100">
-                <md-card-title>
-
-                    <md-card-title-media>
-                        <div class="card-media company-photo">
-                            <img src="img/cv/ulpgc.jpg">
-                        </div>
-                    </md-card-title-media>
-
-                    <md-card-title-text class="card-text_right_company">
-                        <span class="md-headline">Computer Science Degree</span>
-                        <span class="md-subhead"> Specialty of Software Engineer ( 2010 - 2015 ) </span>
-                        <div hide-xs>
-                            <p>I found how much I love coding when I went to university and learned more about programming. That’s when me and some college partners founded two communities, in order to find people who wanted to learn more and share good practices knowledge. In that way, we helped to change the vision of coding in my birthplace. Great things are made by great teams.</p>
-                        </div>
-                    </md-card-title-text>
-
-
-                </md-card-title>
-
-                <div  hide-gt-xs style="margin-right: 15px; margin-left: 15px">
-                    <p>I found how much I love coding when I went to university and learned more about programming. That’s when me and some college partners founded two communities, in order to find people who wanted to learn more and share good practices knowledge. In that way, we helped to change the vision of coding in my birthplace. Great things are made by great teams.</p>
-                </div>
-                <md-card-actions layout="row" layout-align="end center">
-                    <br>
-                    <br>
-                </md-card-actions>
-            </md-card>
-
-            <div layout-xs="column" layout="row" flex="100">
-                <md-card flex-xs="100" flex="50">
-                    <md-card-header>
-                        <md-card-avatar>
-                            <img style="width: 90%;margin-left: 2px;" src="img/cv/logo.png"/>
-                        </md-card-avatar>
-                        <md-card-header-text>
-                            <span class="md-title">Gran Canaria Agile</span>
-                            <span class="md-subhead">Co-Founder ( 2013 - 2017 ) </span>
-                        </md-card-header-text>
-                    </md-card-header>
-                    <md-card-content>
-                        <p>
-                          Gran Canaria Agil is a community focused on encourage Agile practices, proving that there is a better way to develop.
-                        </p>
-                    </md-card-content>
-                </md-card>
-
-                <md-card flex-xs="100" flex="50">
-                    <md-card-header>
-                        <md-card-avatar>
-                            <img src="img/cv/GDG_square_lg.png"/>
-                        </md-card-avatar>
-                        <md-card-header-text>
-                            <span class="md-title">Google Developer Group Gran Canaria</span>
-                            <span class="md-subhead">Co-Founder ( 2014 - 2017 )</span>
-                        </md-card-header-text>
-                    </md-card-header>
-                    <md-card-content>
-                        <p>
-                          GDG Gran Canaria, it is a group of developers whose main goal is to learn and share new Google technologies.
-                        </p>
-                    </md-card-content>
-                </md-card>
+              <p>I am a Software Engineer with a passion for Web Technologies, focused on Javascript. I am an ambitious
+                problem solver and always learning to obtain the necessary skills to become the best software engineer
+                possible.</p>
             </div>
-
-            <md-card flex="100">
-                <md-card-title>
-
-                    <md-card-title-media>
-                        <div class="card-media company-photo" style="height: 120px!important; width: 60px;">
-                            <img src="img/cv/logo-singular.png">
-                        </div>
-                    </md-card-title-media>
-
-                    <md-card-title-text class="card-text_right_company">
-                        <span class="md-headline">Singular Factory</span>
-                        <span class="md-subhead"> Full-Stack ( 2014 - 2015 ) </span>
-                        <div hide-xs>
-                            <p>First, I began teaching my workmates about Java, Git, IntelliJ, design patterns, etc. with the purpose of creating a flexible structure. I started working with Android to create an abstraction layer.</p>
-                            <p>After that, I continued doing an API-Rest and a back office with Symfony PHP Framework, and a web application using JQuery and Vanilla Javascript.</p>
-                        </div>
-                    </md-card-title-text>
-
-                </md-card-title>
-
-                <div hide-gt-xs style="margin-right: 15px; margin-left: 15px">
-                    <p>First, I began teaching my workmates about Java, Git, IntelliJ, design patterns, etc. with the purpose of creating a flexible structure. I started working with Android to create an abstraction layer.</p>
-                    <p>After that, I continued doing an API-Rest and a back office with Symfony PHP Framework, and a web application using JQuery and Vanilla Javascript.</p>
-                </div>
-
-                <md-card-actions layout="row" layout-align="end center">
-                    <br>
-                    <br>
-                </md-card-actions>
-            </md-card>
-
-            <div layout-xs="column" layout="row" flex="100">
-              
-
-
-              <md-card flex-xs="100" flex="50">
-                  <md-card-header>
-                      <md-card-avatar>
-                        <img src="img/cv/logo_siani.png">
-                      </md-card-avatar>
-                      <md-card-header-text>
-                          <span class="md-title">SIANI</span>
-                          <span class="md-subhead"> End of Degree Project  ( 2015 )</span>
-                      </md-card-header-text>
-                  </md-card-header>
-                  <md-card-content>
-                    <p>Simulation Gateway Interface (SGI) represents complex systems simulations in an simple way. To do that it offers a framework, to adapt easily the simulations, and a web application to control the simulation execution.</p>
-                    <p>SGI joints to another proyect in the SIANI Laboratory, called TAFAT.</p>
-                  </md-card-content>
-              </md-card>
-
-              <md-card flex-xs="100" flex="50">
-                  <md-card-header>
-                      <md-card-avatar>
-                        <img src="img/cv/logo-incube.jpg">
-                      </md-card-avatar>
-                      <md-card-header-text>
-                          <span class="md-title">INCUBE - 4º Accelerated Growth Program</span>
-                          <span class="md-subhead"> New Reality ( 2015 ) </span>
-                      </md-card-header-text>
-                  </md-card-header>
-                  <md-card-content>
-                      <p>My friends and I were selected on INCUBE Accelerated Growth Program with our project New Reality.</p>
-                      <p>New Reality pretends to give users an economic Virtual Reality tool for watching 360 images. With the purpose of getting better views from different places like hotels or touristics landscape.</p>
-                  </md-card-content>
-              </md-card>
+          </md-card-title-text>
+          <md-card-title-media>
+            <div class="card-media personal-photo">
+              <img src="img/cristopher-image.jpg" style="border-radius: 5%;     filter: brightness(50%); ">
             </div>
+          </md-card-title-media>
 
+        </md-card-title>
 
-            <md-card flex="100">
-                <md-card-title>
-                    <md-card-title-media>
-                        <div class="card-media company-photo">
-                            <img src="img/cv/company-icon.PNG">
-                        </div>
-                    </md-card-title-media>
-                    <md-card-title-text class="card-text_right_company">
-                        <span class="md-headline">Norwegian Technology</span>
-                        <span class="md-subhead"> Front End Developer ( 2016 - 2018 )</span>
-                        <div hide-xs>
-                            <p>The front end rol, let me work with Javascript/AngularJS, Bootstrap and Angular Material to create a dynamic web applications.</p>
-                            <p>My previous experience on web servers give me the opportunity to help the team designing the API-Rest and databases.</p>
-                            <p>I also worked with databases noSQL on the client, OAuth authentications and websockets.</p>
-                        </div>
-                    </md-card-title-text>
+        <div hide-gt-xs style="margin-right: 15px; margin-left: 15px">
 
-
-                </md-card-title>
-                <div hide-gt-xs style="margin-right: 15px; margin-left: 15px">
-                    <p>The front end rol, let me work with Javascript/AngularJS, Bootstrap and Angular Material to create a dynamic web applications.</p>
-                    <p>My previous experience on web servers give me the opportunity to help the team designing the API-Rest and databases.</p>
-                    <p>I also worked with databases noSQL on the client, OAuth authentications and websockets.</p>
-                </div>
-                <md-card-actions layout="row" layout-align="end center">
-                    <br>
-                    <br>
-                </md-card-actions>
-            </md-card>
-            
-            <div layout-xs="column" layout="row" flex="100">
-              
-
-
-              <md-card flex-xs="100" flex="50">
-                  <md-card-header>
-                      <md-card-avatar>
-                        <img src="img/cv/ulpgc.jpg">
-                      </md-card-avatar>
-                      <md-card-header-text>
-                          <span class="md-title"> ULPGC </span>
-                          <span class="md-subhead"> Technical tutor ( 2017 ) </span>
-                      </md-card-header-text>
-                  </md-card-header>
-                  <md-card-content>
-                    <p>Technical cotutor of "Web service to personal program creation of content media".</p>
-                    <p>My work on this project was to teach and give advice to the student about the technologies that she could use, as well as supervise the software architecture creation.</p>
-                  </md-card-content>
-              </md-card>
-
-              <md-card flex-xs="100" flex="50">
-                <md-card-header>
-                    <md-card-avatar>
-                      <img src="img/cv/ludum-dare.png">
-                    </md-card-avatar>
-                    <md-card-header-text>
-                        <span class="md-title"> Ludum Dare Gran Canaria </span>
-                        <span class="md-subhead"> Organizer ( 2016 - 2017 ) </span>
-                    </md-card-header-text>
-                </md-card-header>
-                <md-card-content>
-                  <p> Ludum Dare is a series of game hackatons where developers around the world spend a weekend creating games.</p>
-                  <p> During this period, I worked with Sponsors and Public Agencies to run this Hackaton on Gran Canaria.</p>
-                  <p> One of the main goal in this events was meet people with different roles like musicians, designers and developers who had passion about development</p>
-                </md-card-content>
-            </md-card>
-
-           
-            </div>
-
-            <md-card flex="100">
-              <md-card-title>
-                  <md-card-title-media>
-                      <div class="card-media company-photo">
-                          <img src="img/cv/foundry-logo.jpeg">
-                      </div>
-                  </md-card-title-media>
-                  <md-card-title-text class="card-text_right_company">
-                      <span class="md-headline"> Foundry </span>
-                      <span class="md-subhead"> Software Engineer ( 2018 - Present ) </span>
-                      <div hide-xs>
-                          <p>I worked on foundry to develop software solutions to control the acceptance criteria on the software. With that purpose, I built CI environments, tests and different tools to check that every day we found the requirements of the software.</p>
-                          <p>To pursuit that, we use Jenkins and Docker for CI, Node, Typescript, Mocha and WebdriverIO to run and check that everything it is in order, Bash to create tools to automate few day to day actions.</p>
-                          <p>Finally, I run different process, analytics, take screen shots, logs, etc to expose automatic reports.</p>
-                      </div>
-                  </md-card-title-text>
-
-
-              </md-card-title>
-              <div hide-gt-xs style="margin-right: 15px; margin-left: 15px">
-                  <p>I worked on foundry to develop software solutions to control the acceptance criteria on the software. With that purpose, I built CI environments, tests and different tools to check that every day we found the requirements of the software.</p>
-                  <p>To pursuit that, we use Jenkins and Docker for CI, Node, Typescript, Mocha and WebdriverIO to run and check that everything it is in order, Bash to create tools to automate few day to day actions.</p>
-                  <p>Finally, I run different process, analytics, take screen shots, logs, etc to expose automatic reports.</p>
-              </div>
-              <md-card-actions layout="row" layout-align="end center">
-                  <br>
-                  <br>
-              </md-card-actions>
-          </md-card>
+          <p>I am a Software Engineer with a passion for Web Technologies, focused on Javascript. I am an ambitious
+            problem solver and always learning to obtain the necessary skills to become the best software engineer
+            possible.</p>
         </div>
 
-        <div class="download-button" style="position: fixed; bottom: 10px; right: 20px">
-            <a href="resource/cv-cristopher-lopez.pdf" class="md-button" onclick="console.log('hello')">
-                <md-button class="md-fab" style="padding-top: 4px;">
-                    <i class="zmdi zmdi-hc-2x zmdi-download"></i>
-                </md-button>
-            </a>
+        <md-card-actions layout="row" layout-align="end center">
+          <br>
+          <br>
+        </md-card-actions>
+      </md-card>
+
+      <md-card flex="100">
+        <md-card-title>
+          <md-card-title-media>
+            <div class="card-media company-photo">
+              <img src="img/cv/foundry-logo.jpeg">
+            </div>
+          </md-card-title-media>
+          <md-card-title-text class="card-text_right_company">
+            <span class="md-headline"> Foundry </span>
+            <span class="md-subhead"> Software Engineer ( 2018 - Present ) </span>
+            <div hide-xs>
+              <p>I worked on foundry to develop software solutions to control the acceptance criteria on the software.
+                With that purpose, I built CI environments, tests and different tools to check that every day we found
+                the requirements of the software.</p>
+              <p>To pursuit that, we use Jenkins and Docker for CI, Node, Typescript, Mocha and WebdriverIO to run and
+                check that everything it is in order, Bash to create tools to automate few day to day actions.</p>
+              <p>Finally, I run different process, analytics, take screen shots, logs, etc to expose automatic reports.
+              </p>
+            </div>
+          </md-card-title-text>
+
+
+        </md-card-title>
+        <div hide-gt-xs style="margin-right: 15px; margin-left: 15px">
+          <p>I worked on foundry to develop software solutions to control the acceptance criteria on the software. With
+            that purpose, I built CI environments, tests and different tools to check that every day we found the
+            requirements of the software.</p>
+          <p>To pursuit that, we use Jenkins and Docker for CI, Node, Typescript, Mocha and WebdriverIO to run and check
+            that everything it is in order, Bash to create tools to automate few day to day actions.</p>
+          <p>Finally, I run different process, analytics, take screen shots, logs, etc to expose automatic reports.</p>
+        </div>
+        <md-card-actions layout="row" layout-align="end center">
+          <br>
+          <br>
+        </md-card-actions>
+      </md-card>
+
+      <div layout-xs="column" layout="row" flex="100">
+        <md-card flex-xs="100" flex="50">
+          <md-card-header>
+            <md-card-avatar>
+              <img src="img/cv/ulpgc.jpg">
+            </md-card-avatar>
+            <md-card-header-text>
+              <span class="md-title"> ULPGC </span>
+              <span class="md-subhead"> Technical tutor ( 2017 ) </span>
+            </md-card-header-text>
+          </md-card-header>
+          <md-card-content>
+            <p>Technical cotutor of "Web service to personal program creation of content media".</p>
+            <p>My work on this project was to teach and give advice to the student about the technologies that she could
+              use, as well as supervise the software architecture creation.</p>
+          </md-card-content>
+        </md-card>
+
+        <md-card flex-xs="100" flex="50">
+          <md-card-header>
+            <md-card-avatar>
+              <img src="img/cv/ludum-dare.png">
+            </md-card-avatar>
+            <md-card-header-text>
+              <span class="md-title"> Ludum Dare Gran Canaria </span>
+              <span class="md-subhead"> Organizer ( 2016 - 2017 ) </span>
+            </md-card-header-text>
+          </md-card-header>
+          <md-card-content>
+            <p> Ludum Dare is a series of game hackatons where developers around the world spend a weekend creating
+              games.</p>
+            <p> During this period, I worked with Sponsors and Public Agencies to run this Hackaton on Gran Canaria.</p>
+            <p> One of the main goal in this events was meet people with different roles like musicians, designers and
+              developers who had passion about development</p>
+          </md-card-content>
+        </md-card>
+      </div>
+
+      <md-card flex="100">
+        <md-card-title>
+          <md-card-title-media>
+            <div class="card-media company-photo">
+              <img src="img/cv/company-icon.PNG">
+            </div>
+          </md-card-title-media>
+          <md-card-title-text class="card-text_right_company">
+            <span class="md-headline">Norwegian Technology</span>
+            <span class="md-subhead"> Front End Developer ( 2016 - 2018 )</span>
+            <div hide-xs>
+              <p>The front end rol, let me work with Javascript/AngularJS, Bootstrap and Angular Material to create a
+                dynamic web applications.</p>
+              <p>My previous experience on web servers give me the opportunity to help the team designing the API-Rest
+                and databases.</p>
+              <p>I also worked with databases noSQL on the client, OAuth authentications and websockets.</p>
+            </div>
+          </md-card-title-text>
+
+
+        </md-card-title>
+        <div hide-gt-xs style="margin-right: 15px; margin-left: 15px">
+          <p>The front end rol, let me work with Javascript/AngularJS, Bootstrap and Angular Material to create a
+            dynamic web applications.</p>
+          <p>My previous experience on web servers give me the opportunity to help the team designing the API-Rest and
+            databases.</p>
+          <p>I also worked with databases noSQL on the client, OAuth authentications and websockets.</p>
+        </div>
+        <md-card-actions layout="row" layout-align="end center">
+          <br>
+          <br>
+        </md-card-actions>
+      </md-card>
+
+      <div layout-xs="column" layout="row" flex="100">
+        <md-card flex-xs="100" flex="50">
+          <md-card-header>
+            <md-card-avatar>
+              <img src="img/cv/logo_siani.png">
+            </md-card-avatar>
+            <md-card-header-text>
+              <span class="md-title">SIANI</span>
+              <span class="md-subhead"> End of Degree Project ( 2015 )</span>
+            </md-card-header-text>
+          </md-card-header>
+          <md-card-content>
+            <p>Simulation Gateway Interface (SGI) represents complex systems simulations in an simple way. To do that it
+              offers a framework, to adapt easily the simulations, and a web application to control the simulation
+              execution.</p>
+            <p>SGI joints to another proyect in the SIANI Laboratory, called TAFAT.</p>
+          </md-card-content>
+        </md-card>
+
+        <md-card flex-xs="100" flex="50">
+          <md-card-header>
+            <md-card-avatar>
+              <img src="img/cv/logo-incube.jpg">
+            </md-card-avatar>
+            <md-card-header-text>
+              <span class="md-title">INCUBE - 4º Accelerated Growth Program</span>
+              <span class="md-subhead"> New Reality ( 2015 ) </span>
+            </md-card-header-text>
+          </md-card-header>
+          <md-card-content>
+            <p>My friends and I were selected on INCUBE Accelerated Growth Program with our project New Reality.</p>
+            <p>New Reality pretends to give users an economic Virtual Reality tool for watching 360 images. With the
+              purpose of getting better views from different places like hotels or touristics landscape.</p>
+          </md-card-content>
+        </md-card>
+      </div>
+
+      <md-card flex="100">
+        <md-card-title>
+
+          <md-card-title-media>
+            <div class="card-media company-photo" style="height: 120px!important; width: 60px;">
+              <img src="img/cv/logo-singular.png">
+            </div>
+          </md-card-title-media>
+
+          <md-card-title-text class="card-text_right_company">
+            <span class="md-headline">Singular Factory</span>
+            <span class="md-subhead"> Full-Stack ( 2014 - 2015 ) </span>
+            <div hide-xs>
+              <p>First, I began teaching my workmates about Java, Git, IntelliJ, design patterns, etc. with the purpose
+                of creating a flexible structure. I started working with Android to create an abstraction layer.</p>
+              <p>After that, I continued doing an API-Rest and a back office with Symfony PHP Framework, and a web
+                application using JQuery and Vanilla Javascript.</p>
+            </div>
+          </md-card-title-text>
+
+        </md-card-title>
+
+        <div hide-gt-xs style="margin-right: 15px; margin-left: 15px">
+          <p>First, I began teaching my workmates about Java, Git, IntelliJ, design patterns, etc. with the purpose of
+            creating a flexible structure. I started working with Android to create an abstraction layer.</p>
+          <p>After that, I continued doing an API-Rest and a back office with Symfony PHP Framework, and a web
+            application using JQuery and Vanilla Javascript.</p>
         </div>
 
+        <md-card-actions layout="row" layout-align="end center">
+          <br>
+          <br>
+        </md-card-actions>
+      </md-card>
+
+      <div layout-xs="column" layout="row" flex="100">
+        <md-card flex-xs="100" flex="50">
+          <md-card-header>
+            <md-card-avatar>
+              <img style="width: 90%;margin-left: 2px;" src="img/cv/logo.png" />
+            </md-card-avatar>
+            <md-card-header-text>
+              <span class="md-title">Gran Canaria Agile</span>
+              <span class="md-subhead">Co-Founder ( 2013 - 2017 ) </span>
+            </md-card-header-text>
+          </md-card-header>
+          <md-card-content>
+            <p>
+              Gran Canaria Agil is a community focused on encourage Agile practices, proving that there is a better way
+              to develop.
+            </p>
+          </md-card-content>
+        </md-card>
+
+        <md-card flex-xs="100" flex="50">
+          <md-card-header>
+            <md-card-avatar>
+              <img src="img/cv/GDG_square_lg.png" />
+            </md-card-avatar>
+            <md-card-header-text>
+              <span class="md-title">Google Developer Group Gran Canaria</span>
+              <span class="md-subhead">Co-Founder ( 2014 - 2017 )</span>
+            </md-card-header-text>
+          </md-card-header>
+          <md-card-content>
+            <p>
+              GDG Gran Canaria, it is a group of developers whose main goal is to learn and share new Google
+              technologies.
+            </p>
+          </md-card-content>
+        </md-card>
+      </div>
+
+      <md-card flex="100">
+        <md-card-title>
+
+          <md-card-title-media>
+            <div class="card-media company-photo">
+              <img src="img/cv/ulpgc.jpg">
+            </div>
+          </md-card-title-media>
+
+          <md-card-title-text class="card-text_right_company">
+            <span class="md-headline">Computer Science Degree</span>
+            <span class="md-subhead"> Specialty of Software Engineer ( 2010 - 2015 ) </span>
+            <div hide-xs>
+              <p>I found how much I love coding when I went to university and learned more about programming. That’s
+                when me and some college partners founded two communities, in order to find people who wanted to learn
+                more and share good practices knowledge. In that way, we helped to change the vision of coding in my
+                birthplace. Great things are made by great teams.</p>
+            </div>
+          </md-card-title-text>
+
+
+        </md-card-title>
+
+        <div hide-gt-xs style="margin-right: 15px; margin-left: 15px">
+          <p>I found how much I love coding when I went to university and learned more about programming. That’s when me
+            and some college partners founded two communities, in order to find people who wanted to learn more and
+            share good practices knowledge. In that way, we helped to change the vision of coding in my birthplace.
+            Great things are made by great teams.</p>
+        </div>
+        <md-card-actions layout="row" layout-align="end center">
+          <br>
+          <br>
+        </md-card-actions>
+      </md-card>
     </div>
 
+    <div class="download-button" style="position: fixed; bottom: 10px; right: 20px">
+      <a href="resource/cv-cristopher-lopez.pdf" class="md-button" onclick="console.log('hello')">
+        <md-button class="md-fab" style="padding-top: 4px;">
+          <i class="zmdi zmdi-hc-2x zmdi-download"></i>
+        </md-button>
+      </a>
+    </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+  </div>
 
-<!-- Your application bootstrap  -->
-<script type="text/javascript">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript">
 
     angular.module('BlankApp', ['ngMaterial']);
-</script>
+  </script>
 
 </body>
+
 </html>
